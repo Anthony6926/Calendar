@@ -1,6 +1,6 @@
 import React from "react";
 import moment from "moment";
-import { range } from "moment-range";
+
 import "./calendar.css";
 export default class Calendar extends React.Component {
   weekdayshort = moment.weekdaysShort();
@@ -19,9 +19,11 @@ export default class Calendar extends React.Component {
   year = () => {
     return this.state.dateObject.format("Y");
   };
+  //find current day
   currentDay = () => {
     return this.state.dateObject.format("D");
   };
+  //getter to retrieve the first weekday
   firstDayOfMonth = () => {
     let dateObject = this.state.dateObject;
     let firstDay = moment(dateObject)
@@ -29,6 +31,7 @@ export default class Calendar extends React.Component {
       .format("d"); // Day of week 0...1..5...6
     return firstDay;
   };
+  //getter for the month
   month = () => {
     return this.state.dateObject.format("MMMM");
   };
@@ -204,9 +207,12 @@ export default class Calendar extends React.Component {
     );
   };
   render() {
+
+
     let weekdayshortname = this.weekdayshort.map(day => {
       return <th key={day}>{day}</th>;
     });
+    
     let blanks = [];
     for (let i = 0; i < this.firstDayOfMonth(); i++) {
       blanks.push(<td className="calendar-day empty">{""}</td>);
