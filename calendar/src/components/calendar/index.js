@@ -295,7 +295,7 @@ export default class Calendar extends React.Component {
           <div className="calendar-date">
             <table className="calendar-day">
               <thead>
-                <tr>{weekdayshortname}</tr>
+                <tr className="weekdayname">{weekdayshortname}</tr>
               </thead>
               <tbody>{daysinmonth}</tbody>
             </table>

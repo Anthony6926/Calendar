@@ -1,0 +1,123 @@
+.fc th {
+    background-color: #1a1a1a;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 47px;
+    padding-top: 11px;
+    padding-bottom:0px;
+    
+}
+th {
+    border: 1px solid var(--fc-border-color, #1a1a1a) !important;
+    
+}
+.fc {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top:10px;
+    
+}
+.fc-header-toolbar fc-toolbar{
+    width: 100%;
+    
+}
+.fc .fc-button-primary {
+    color: #fff;
+    color: var(--fc-button-text-color, #fff);
+    background-color: #D4BDB4;
+    background-color: var(--fc-button-bg-color, #D4BDB4);
+    border-color: #D4BDB4;
+    border-color: var(--fc-button-border-color, #D4BDB4);
+    
+}
+
+.fc-timeGridDay-button{
+    color: #A4A2DC !important;
+    color: var(--fc-button-text-color, #fff);
+    background-color: white !important;
+    background-color: var(--fc-button-active-bg-color, #DDDDDD);
+    border-color: #DDDDDD !important;
+    border-color: var(--fc-button-active-border-color, #151e27);
+    border-bottom-left-radius: 25px !important;
+    border-top-left-radius: 25px !important;
+    -webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    
+}
+
+.fc-timeGridWeek-button{
+    color: #A4A2DC !important;
+    color: var(--fc-button-text-color, #fff);
+    background-color: white !important;
+    background-color: var(--fc-button-active-bg-color, #DDDDDD );
+    border-color: #DDDDDD !important;
+    border-color: var(--fc-button-active-border-color, #151e27);
+    -webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    
+}
+
+.fc-dayGridMonth-button{
+    color: #A4A2DC !important;
+    color: var(--fc-button-text-color, #fff);
+    background-color: white !important;
+    background-color: var(--fc-button-active-bg-color, #DDDDDD);
+    border-color: #DDDDDD !important;
+    border-color: var(--fc-button-active-border-color, #151e27);
+    border-bottom-right-radius: 25px !important;
+    border-top-right-radius: 25px !important;
+    -webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+
+}
+.fc-button-active {
+    color: #fff !important;
+    color: var(--fc-button-text-color, #fff);
+    background-color: #DDDDDD !important;
+    background-color: var(--fc-button-active-bg-color, #1a252f);
+    border-color: #DDDDDD ;
+    
+}
+
+.fc-search_appointment-button{
+    color: #A4A2DC !important;
+    color: var(--fc-button-text-color, #fff);
+    background-color: white !important;
+    background-color: var(--fc-button-active-bg-color, #DDDDDD);
+    border-color: #DDDDDD !important;
+    border-color: var(--fc-button-active-border-color, #151e27);
+    border-bottom-right-radius: 25px !important;
+    border-top-right-radius: 25px !important;
+    border-bottom-left-radius: 25px !important;
+    border-top-left-radius: 25px !important;
+    -webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+
+}
+
+.fc-toolbar-title{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    font-size: 20px !important;
+
+    background-color: #D4BDB4;
+    padding-right: 0.5%;
+    padding-left: 1.7%;
+    padding-top: 0.5%;
+    padding-bottom: 0.45%;
+    
+   
+}
+.fc .fc-daygrid-day-top {
+    display: flex;
+    flex-direction: row;
+}

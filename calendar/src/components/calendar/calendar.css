@@ -11,9 +11,9 @@
 
 /* @start tail.DateTime */
 .tail-datetime-calendar {
-    width: 245px;
-    height: auto;
-    margin: 15px;
+    width: 97%;
+    height: 771.59px;
+    margin-left: 15px;
     padding: 0;
     display: block;
     overflow: hidden;
@@ -26,6 +26,11 @@
     border-radius: 3px;
     -webkit-border-radius: 3px;
   }
+
+  .weekdayname{
+
+  }
+
   .tail-datetime-calendar:after {
     clear: both;
     content: "";
@@ -109,12 +114,13 @@
     width: 35px;
     height: 35px;
     padding: 0;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
+    
     font-weight: normal;
     line-height: 35px;
     border: 0;
-    background-color: #223344;
+    background-color: #1a1a1a;
   }
   .tail-datetime-calendar .calendar-date table tbody tr > * {
     color: #334455;
