@@ -4,12 +4,15 @@ import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
 import "./Calendar.css";
 export default function FullCalendarApp() {
+
+  
+
     const events = [
         {
           id: 1,
           title: 'event 1',
-          start: '2021-06-14T10:00:00',
-          end: '2021-06-14T12:00:00',
+          start: '2022-01-06T10:00:00',
+          end: '2022-01-06T12:00:00',
         },
         {
           id: 2,
@@ -44,7 +47,7 @@ export default function FullCalendarApp() {
             end: 'timeGridDay,timeGridWeek,dayGridMonth'
           }}
           events={events}
-          eventColor="red"
+          eventColor="cyan"
         />
       </div>
     );

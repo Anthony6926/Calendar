@@ -121,3 +121,20 @@ th {
     display: flex;
     flex-direction: row;
 }
+
+.fc-daygrid-body-natural{
+    display: none !important;
+}
+
+.fc-scroller{
+    overflow: unset !important;
+}
+
+col{
+    width: 160px !important;
+}
+
+.fc .fc-timegrid-slot-minor {
+    border-top-style: dotted;
+    border-top: none;
+}
