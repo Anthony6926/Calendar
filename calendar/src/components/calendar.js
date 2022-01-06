@@ -13,18 +13,24 @@ export default function FullCalendarApp() {
           title: 'event 1',
           start: '2022-01-06T10:00:00',
           end: '2022-01-06T12:00:00',
+          color: 'cyan'
         },
         {
           id: 2,
           title: 'event 2',
           start: '2021-06-16T13:00:00',
           end: '2021-06-16T18:00:00',
+          color: 'red'
         },
         { 
           id: 3, 
           title: 'event 3', 
           start: '2021-06-17', 
-          end: '2021-06-20' },
+          end: '2021-06-20' ,
+          color: 'green'
+        },
+          
+        
       ];
     return (
       <div className="App">
@@ -47,7 +53,7 @@ export default function FullCalendarApp() {
             end: 'timeGridDay,timeGridWeek,dayGridMonth'
           }}
           events={events}
-          eventColor="cyan"
+          eventColor={events.color}
         />
       </div>
     );
