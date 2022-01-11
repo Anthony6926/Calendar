@@ -136,8 +136,12 @@ th {
     display: none !important;
 }
 
-.fc-scroller{
+/* .fc-scroller{
     overflow: unset !important;
+} */
+.fc-scroller,.fc-scroller .fc-scroller-liquid-absolute {
+    height: auto!important;
+    overflow-y: auto !important;
 }
 
 col{
@@ -235,4 +239,31 @@ span.fc-icon.fc-icon-chevron-right {
   .fc .fc-timegrid-slot {
     height: 4.5em;
 
+}
+.fc-event-time{
+    font: normal normal normal 12px/14px Poppins !important;
+    letter-spacing: -0.18px;
+    color: #6277BB;
+
+}
+.fc-event-title{
+    font: normal normal 500 14px/16px Poppins !important;
+    letter-spacing: -0.22px;
+    color: #6277BB;
+}
+.fc-timegrid-slot-label-cushion.fc-scrollgrid-shrink-cushion {
+    font: normal normal 600 12px/17px Open Sans;
+    letter-spacing: -0.2px;
+    color: #1A1A1A;
+    padding-right: 15px;
+}
+
+.fc-timegrid-event-harness > .fc-timegrid-event {
+    position: absolute;
+    top: -0.5px;
+    bottom: -0.5px;
+    left: -1.8px;
+    border-radius: unset;
+    right: -5px;
+    border: 1px dashed #FFFFFF;
 }

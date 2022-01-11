@@ -30,7 +30,7 @@ export default function FullCalendarApp() {
       id: 3,
       title: 'event 3',
       start: '2022-01-06T09:00:00',
-      end: '2022-01-06T10:00:00',
+      end: '2022-01-06T09:30:00',
       color: '#F7E4F3'
     },
 
@@ -47,16 +47,39 @@ export default function FullCalendarApp() {
             titleFormat: "DD MMM",
 
             dayHeaderFormat: "ddd DD MMM",
+            slotLabelFormat: [
+              {
+                hour: 'numeric',
+                minute: '2-digit',
+                meridiem: true,
+                hour12: false
+              },
 
+            ]
 
           },
           month: {
             titleFormat: { month: 'long' },
+            eventTimeFormat: {
+              hour: 'numeric',
+              minute: '2-digit',
+              meridiem: true,
+
+            },
+            displayEventEnd: true
           },
           week: {
-            titleFormat: "DD",
+            titleFormat: "DD MMM",
             dayHeaderFormat: 'ddd D MMM ',
-            // dayHeaderFormat: { weekday: 'short', day: '2-digit', month: 'short', omitCommas: true }
+            slotLabelFormat: [
+              {
+                hour: 'numeric',
+                minute: '2-digit',
+                meridiem: true,
+                hour12: false
+              },
+
+            ]
           },
           timeGrid: {
             slotMinTime: '08:00',
@@ -66,6 +89,13 @@ export default function FullCalendarApp() {
 
         plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin, momentPlugin]}
         initialView="dayGridMonth"
+
+        // columnFormat={{
+        //   month: 'ddd',
+        //   week: 'D/M ddd ',
+        //   day: 'D/M ddd'
+        // }}
+
 
         customButtons={{
           search_appointment: {
@@ -94,8 +124,6 @@ export default function FullCalendarApp() {
         scrollTime={{
           default: '06:00:00'
         }}
-
-
 
 
         events={events}
