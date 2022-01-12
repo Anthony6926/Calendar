@@ -33,6 +33,41 @@ export default function FullCalendarApp() {
       end: '2022-01-06T09:30:00',
       color: '#F7E4F3'
     },
+    {
+      id: 4,
+      title: 'event 4',
+      start: '2022-01-12T10:00:00',
+      end: '2022-01-12T11:00:00',
+      color: '#F7E4F3'
+    },
+    {
+      id: 5,
+      title: 'event 5',
+      start: '2022-01-12T12:00:00',
+      end: '2022-01-12T12:30:00',
+      color: '#D4E8D7'
+    },
+    {
+      id: 6,
+      title: 'event 6',
+      start: '2022-01-12T12:30:00',
+      end: '2022-01-12T13:00:00',
+      color: '#F7E4F3'
+    },
+    {
+      id: 7,
+      title: 'event 7',
+      start: '2022-01-12T10:00:00',
+      end: '2022-01-12T11:00:00',
+      color: '#F7E4F3'
+    },
+    {
+      id: 8,
+      title: 'event 7',
+      start: '2022-01-12T11:00:00',
+      end: '2022-01-12T12:00:00',
+      color: '#D4E8D7'
+    },
 
 
   ];
@@ -43,6 +78,7 @@ export default function FullCalendarApp() {
       <FullCalendar
 
         views={{
+          eventLimit: true,
           day: {
             titleFormat: "DD MMM",
 
@@ -52,10 +88,16 @@ export default function FullCalendarApp() {
                 hour: 'numeric',
                 minute: '2-digit',
                 meridiem: true,
-                hour12: false
+                // hour12: false
               },
 
-            ]
+            ],
+            eventTimeFormat: {
+              hour: 'numeric',
+              minute: '2-digit',
+              meridiem: true,
+
+            },
 
           },
           month: {
@@ -66,6 +108,7 @@ export default function FullCalendarApp() {
               meridiem: true,
 
             },
+
             displayEventEnd: true
           },
           week: {
@@ -76,10 +119,16 @@ export default function FullCalendarApp() {
                 hour: 'numeric',
                 minute: '2-digit',
                 meridiem: true,
-                hour12: false
+                // hour12: false
               },
 
-            ]
+            ],
+            eventTimeFormat: {
+              hour: 'numeric',
+              minute: '2-digit',
+              meridiem: true,
+
+            },
           },
           timeGrid: {
             slotMinTime: '08:00',

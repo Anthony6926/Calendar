@@ -12,9 +12,7 @@
     
 }
 
-.fc-col-header-cell:last-child {
-    text-align: left !important;
-}
+
 th {
     border: 1px solid var(--fc-border-color, #1a1a1a) !important;
     
@@ -246,7 +244,7 @@ span.fc-icon.fc-icon-chevron-right {
     color: #6277BB;
 
 }
-.fc-event-title{
+.fc-dayGridMonth-view .fc-event-title{
     font: normal normal 500 14px/16px Poppins !important;
     letter-spacing: -0.22px;
     color: #6277BB;
@@ -266,4 +264,32 @@ span.fc-icon.fc-icon-chevron-right {
     border-radius: unset;
     right: -5px;
     border: 1px dashed #FFFFFF;
+}
+
+.fc-timeGridDay-view .fc-timegrid-event-harness {
+    width: 16%;
+}
+.fc-timeGridDay-view .fc-col-header-cell {
+    text-align: left !important;
+}
+.fc-timeGridDay-view .fc-event-time,.fc-timeGridWeek-view .fc-event-time{
+    font: normal normal 400 10px/14px Poppins;
+    letter-spacing: -0.18px;
+    color: #000000;
+}
+.fc-timeGridDay-view .fc-event-title,.fc-timeGridWeek-view .fc-event-title{
+    font: normal normal 500 12px/14px Poppins;
+    letter-spacing: -0.22px;
+    color: #1A1A1A;
+}
+.fc-timeGridWeek-view .fc-v-event .fc-event-main-frame {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    padding-top: 5px;
+    padding-left:5px
+}
+
+td.fc-timegrid-divider.fc-cell-shaded {
+    display: none;
 }
