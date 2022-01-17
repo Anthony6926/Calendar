@@ -28,7 +28,7 @@ export default function FullCalendarApp() {
     },
     {
       id: 3,
-      title: 'event 3',
+      title: 'Bridal day 2022',
       start: '2022-01-06T09:00:00',
       end: '2022-01-06T09:30:00',
       color: '#F7E4F3'
@@ -42,7 +42,7 @@ export default function FullCalendarApp() {
     },
     {
       id: 5,
-      title: 'event 5',
+      title: 'Bridal Opening day 2022',
       start: '2022-01-12T12:00:00',
       end: '2022-01-12T12:30:00',
       color: '#D4E8D7'
@@ -65,7 +65,21 @@ export default function FullCalendarApp() {
       id: 8,
       title: 'event 7',
       start: '2022-01-12T11:00:00',
-      end: '2022-01-12T12:00:00',
+      end: '2022-01-12T11:10:00',
+      color: '#D4E8D7'
+    },
+    {
+      id: 9,
+      title: 'event 8',
+      start: '2022-01-12T11:10:00',
+      end: '2022-01-12T11:20:00',
+      color: '#D4E8D7'
+    },
+    {
+      id: 10,
+      title: 'Bride Look',
+      start: '2022-01-12T11:21:00',
+      end: '2022-01-12T11:29:00',
       color: '#D4E8D7'
     },
 
@@ -79,14 +93,15 @@ export default function FullCalendarApp() {
 
         views={{
           eventLimit: true,
+          dayMaxEventRows: true,
           day: {
             titleFormat: "DD MMM",
-
             dayHeaderFormat: "ddd DD MMM",
+            dayMaxEventRows: 3,
             slotLabelFormat: [
               {
                 hour: 'numeric',
-                minute: '2-digit',
+                // minute: '2-digit',
                 meridiem: true,
                 // hour12: false
               },
@@ -102,6 +117,8 @@ export default function FullCalendarApp() {
           },
           month: {
             titleFormat: { month: 'long' },
+            eventMaxStack: 3,
+            dayMaxEventRows: 4,
             eventTimeFormat: {
               hour: 'numeric',
               minute: '2-digit',
@@ -117,7 +134,7 @@ export default function FullCalendarApp() {
             slotLabelFormat: [
               {
                 hour: 'numeric',
-                minute: '2-digit',
+                // minute: '2-digit',
                 meridiem: true,
                 // hour12: false
               },
@@ -132,13 +149,16 @@ export default function FullCalendarApp() {
           },
           timeGrid: {
             slotMinTime: '08:00',
-            slotMaxTime: '21:00'
+            slotMaxTime: '21:00',
+            dayMaxEventRows: 3,
+            eventLimit: 3,
+            eventMaxStack: 3
           }
         }}
 
         plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin, momentPlugin]}
         initialView="dayGridMonth"
-
+        firstDay='1'
         // columnFormat={{
         //   month: 'ddd',
         //   week: 'D/M ddd ',
@@ -173,7 +193,6 @@ export default function FullCalendarApp() {
         scrollTime={{
           default: '06:00:00'
         }}
-
 
         events={events}
         eventColor={events.color}

@@ -1,11 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 .fc th {
     background-color: #1a1a1a;
     text-align: center;
     font-size: 12px;
     color: white;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font: normal normal 500 12px/14px Poppins !important;
     height: 30px;
-
     padding-bottom:0px;
     text-transform: uppercase;
     vertical-align: middle;
@@ -34,6 +34,7 @@ th {
     background-color: var(--fc-button-bg-color, #D4BDB4);
     border-color: #D4BDB4;
     border-color: var(--fc-button-border-color, #D4BDB4);
+    min-width: 91.5px;
     
 }
 
@@ -49,7 +50,6 @@ th {
     -webkit-box-shadow: none !important;
 	-moz-box-shadow: none !important;
 	box-shadow: none !important;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
     
 }
 
@@ -63,7 +63,6 @@ th {
     -webkit-box-shadow: none !important;
 	-moz-box-shadow: none !important;
 	box-shadow: none !important;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
     
 }
 
@@ -79,7 +78,7 @@ th {
     -webkit-box-shadow: none !important;
 	-moz-box-shadow: none !important;
 	box-shadow: none !important;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    /* font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important; */
 
 }
 .fc-button-active {
@@ -89,24 +88,6 @@ th {
     background-color: var(--fc-button-active-bg-color, #A4A2DC);
     border-color: #DDDDDD ;
     
-}
-
-.fc-search_appointment-button{
-    color: #A4A2DC !important;
-    color: var(--fc-button-text-color, #fff);
-    background-color: white !important;
-    background-color: var(--fc-button-active-bg-color, #DDDDDD);
-    border-color: #DDDDDD !important;
-    border-color: var(--fc-button-active-border-color, #151e27);
-    border-bottom-right-radius: 25px !important;
-    border-top-right-radius: 25px !important;
-    border-bottom-left-radius: 25px !important;
-    border-top-left-radius: 25px !important;
-    -webkit-box-shadow: none !important;
-	-moz-box-shadow: none !important;
-	box-shadow: none !important;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
-
 }
 
 .fc-toolbar-title{
@@ -158,13 +139,16 @@ col{
 .fc-prev-button{
     background: #fbf9f8 0% 0% no-repeat padding-box !important;
     /* box-shadow: 0px 3px 26px #00000017; */
-    margin-left: -63% !important;
+    margin-left: -50% !important;
     margin-bottom:-64% !important;
     border-bottom-left-radius: 25px !important;
     border-top-left-radius: 25px !important;
     border-color:#fbf9f8!important ;
     -webkit-box-shadow: none !important;
-	-moz-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    padding-left: 8px !important;
+    text-align: start !important;
+    min-width: 10px !important;
 	
 }
 
@@ -177,25 +161,12 @@ col{
     border-top-right-radius: 25px !important;
     border-color:#fbf9f8 !important ;
     -webkit-box-shadow: none !important;
-	-moz-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    padding-right: 8px !important;
+    text-align: end !important;
+    min-width: 10px !important;
 }
 
-/* .fc-timeGridDay-button .fc-button .fc-button-primary{
-    text-transform: uppercase !important;
-    
-    font: normal normal 600 14px/21px Poppins !important;
-
-} */
-
-/* .fc-timeGridWeek-button{
-    text-transform: uppercase !important;
-    font-size:14px !important
-}
-
-.fc-dayGridMonth-button{
-    text-transform: uppercase !important;
-    font-size:14px !important
-} */
 
 .fc-timeGridDay-button , .fc-dayGridMonth-button , .fc-timeGridWeek-button{
     text-transform: uppercase !important;
@@ -226,7 +197,7 @@ span.fc-icon.fc-icon-chevron-right {
     /* box-shadow: 0px 3px 26px #00000017 !important; */
     border: 1px solid #a4a2dc !important;
     border-radius: 27px !important;
-    width: 270px;
+    width: 202px;
     height: 55px;
     background: #ffff !important;
     color: #a4a2dc !important;
@@ -235,7 +206,7 @@ span.fc-icon.fc-icon-chevron-right {
   }
 
   .fc .fc-timegrid-slot {
-    height: 4.5em;
+    height: 4.0em;
 
 }
 .fc-event-time{
@@ -245,12 +216,12 @@ span.fc-icon.fc-icon-chevron-right {
 
 }
 .fc-dayGridMonth-view .fc-event-title{
-    font: normal normal 500 14px/16px Poppins !important;
+    font: normal normal 700 14px/16px Poppins !important;
     letter-spacing: -0.22px;
     color: #6277BB;
 }
 .fc-timegrid-slot-label-cushion.fc-scrollgrid-shrink-cushion {
-    font: normal normal 600 12px/17px Open Sans;
+    font: normal normal 600 12px/17px Poppins;
     letter-spacing: -0.2px;
     color: #1A1A1A;
     padding-right: 15px;
@@ -271,6 +242,7 @@ span.fc-icon.fc-icon-chevron-right {
 }
 .fc-timeGridDay-view .fc-col-header-cell {
     text-align: left !important;
+    padding-left: 55px
 }
 .fc-timeGridDay-view .fc-event-time,.fc-timeGridWeek-view .fc-event-time{
     font: normal normal 400 10px/14px Poppins;
@@ -278,7 +250,7 @@ span.fc-icon.fc-icon-chevron-right {
     color: #000000;
 }
 .fc-timeGridDay-view .fc-event-title,.fc-timeGridWeek-view .fc-event-title{
-    font: normal normal 500 12px/14px Poppins;
+    font: normal normal 700 12px/14px Poppins;
     letter-spacing: -0.22px;
     color: #1A1A1A;
 }
@@ -292,4 +264,31 @@ span.fc-icon.fc-icon-chevron-right {
 
 td.fc-timegrid-divider.fc-cell-shaded {
     display: none;
+}
+
+.fc-daygrid-day-number{
+    font: normal normal 600 16px/22px Poppins !important;
+}
+
+td.fc-timegrid-slot.fc-timegrid-slot-label.fc-scrollgrid-shrink {
+    vertical-align: baseline;
+    padding-top: 5px;
+}
+
+.fc-daygrid-day-frame.fc-scrollgrid-sync-inner {
+    /* max-height: 1px; */
+    max-height: 35px;
+}
+
+.fc-v-event .fc-event-main-frame {
+    height: 100%;
+    display: grid;
+    align-items: center;
+    /* justify-items: center; */
+    padding-left:10px;
+    align-content: center;
+}
+
+.fc-non-business {
+    background: none !important;
 }
