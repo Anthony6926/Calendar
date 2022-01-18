@@ -92,12 +92,11 @@ export default function FullCalendarApp() {
       <FullCalendar
 
         views={{
-          eventLimit: true,
-          dayMaxEventRows: true,
+          handleWindowResize: false,
           day: {
             titleFormat: "DD MMM",
             dayHeaderFormat: "ddd DD MMM",
-            dayMaxEventRows: 3,
+            // dayMaxEventRows: 3,
             slotLabelFormat: [
               {
                 hour: 'numeric',
@@ -117,20 +116,28 @@ export default function FullCalendarApp() {
           },
           month: {
             titleFormat: { month: 'long' },
-            eventMaxStack: 3,
+            // eventMaxStack: 3,
             dayMaxEventRows: 4,
             eventTimeFormat: {
               hour: 'numeric',
               minute: '2-digit',
               meridiem: true,
 
+
             },
 
             displayEventEnd: true
           },
           week: {
-            titleFormat: "DD MMM",
+            // titleFormat: "DD MMM",
+            titleFormat: {
+              month: 'short',
+              day: 'numeric',
+              timeZone: 'UTC',
+              locale: 'us'
+            },
             dayHeaderFormat: 'ddd D MMM ',
+            titleRangeSeparator: '-',
             slotLabelFormat: [
               {
                 hour: 'numeric',
@@ -150,15 +157,14 @@ export default function FullCalendarApp() {
           timeGrid: {
             slotMinTime: '08:00',
             slotMaxTime: '21:00',
-            dayMaxEventRows: 3,
-            eventLimit: 3,
-            eventMaxStack: 3
+
           }
         }}
 
         plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin, momentPlugin]}
         initialView="dayGridMonth"
         firstDay='1'
+
         // columnFormat={{
         //   month: 'ddd',
         //   week: 'D/M ddd ',

@@ -215,7 +215,7 @@ span.fc-icon.fc-icon-chevron-right {
     color: #6277BB;
 
 }
-.fc-dayGridMonth-view .fc-event-title{
+.fc-dayGridMonth-view .fc-event-title, .fc-popover-body .fc-event-title {
     font: normal normal 700 14px/16px Poppins !important;
     letter-spacing: -0.22px;
     color: #6277BB;
@@ -277,7 +277,7 @@ td.fc-timegrid-slot.fc-timegrid-slot-label.fc-scrollgrid-shrink {
 
 .fc-daygrid-day-frame.fc-scrollgrid-sync-inner {
     /* max-height: 1px; */
-    max-height: 35px;
+    max-height: 70px;
 }
 
 .fc-v-event .fc-event-main-frame {
@@ -292,3 +292,36 @@ td.fc-timegrid-slot.fc-timegrid-slot-label.fc-scrollgrid-shrink {
 .fc-non-business {
     background: none !important;
 }
+
+.fc .fc-toolbar.fc-header-toolbar {
+    margin-bottom: 0;
+}
+
+.fc-daygrid-day-bottom {
+    padding-top: 40px !important;
+    padding-left: 10px !important;
+    font: normal normal normal 12px/14px Poppins !important;
+    color: #6277BB;
+}
+
+.fc-popover-header,.fc-popover-body{
+    font: normal normal normal 12px/14px Poppins !important;
+}
+
+.fc .fc-daygrid-day-number {
+    padding-top: 13px;
+}
+
+.fc-theme-standard .fc-scrollgrid {
+    border: none !important;
+    background: #FFFFFF 0% 0% no-repeat padding-box !important;
+    box-shadow: 0px 1px 8px #0000001a !important;
+}
+
+/* media Queries */
+
+/* @media (max-width: 600px) {
+    body {
+        overflow-x: scroll;
+    }
+} */
