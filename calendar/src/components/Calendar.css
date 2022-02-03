@@ -236,13 +236,16 @@ span.fc-icon.fc-icon-chevron-right {
     right: -5px;
     border: 1px dashed #FFFFFF;
 }
+.fc-timeGridDay-view .fc-timegrid-col-events {
+    margin: 0 70% 0 2px !important;
+}
 
 .fc-timeGridDay-view .fc-timegrid-event-harness {
-    width: 16%;
+    /* width: 16%; */
 }
 .fc-timeGridDay-view .fc-col-header-cell {
     text-align: left !important;
-    padding-left: 55px
+    padding-left: 15px
 }
 .fc-timeGridDay-view .fc-event-time,.fc-timeGridWeek-view .fc-event-time{
     font: normal normal 400 10px/14px Poppins;
@@ -298,12 +301,21 @@ td.fc-timegrid-slot.fc-timegrid-slot-label.fc-scrollgrid-shrink {
 }
 
 .fc-daygrid-day-bottom {
-    padding-top: 40px !important;
-    padding-left: 10px !important;
+    padding-top: 5px !important;
+    padding-left: 5px !important;
     font: normal normal normal 12px/14px Poppins !important;
     color: #6277BB;
 }
 
+.fc-daygrid-event-dot{
+    display: none;
+}
+.fc-daygrid-dot-event {
+    flex-direction: column !important;
+    align-items: flex-start;
+    padding-left: 4px !important;
+    margin-bottom: 2px;
+}
 .fc-popover-header,.fc-popover-body{
     font: normal normal normal 12px/14px Poppins !important;
 }

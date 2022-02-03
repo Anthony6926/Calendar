@@ -14,73 +14,67 @@ export default function FullCalendarApp() {
   const events = [
     {
       id: 1,
-      title: 'event 1',
+      title: 'Perla',
       start: '2022-01-06T10:00:00',
       end: '2022-01-06T12:00:00',
       color: '#CECDF2'
     },
     {
       id: 2,
-      title: 'event 2',
+      title: 'Rena',
       start: '2022-01-06T10:00:00',
       end: '2022-01-06T12:00:00',
       color: '#D4E8D7'
     },
     {
       id: 3,
-      title: 'Bridal day 2022',
+      title: 'Gaelle',
       start: '2022-01-06T09:00:00',
       end: '2022-01-06T09:30:00',
       color: '#F7E4F3'
     },
     {
       id: 4,
-      title: 'event 4',
+      title: 'Lina',
       start: '2022-01-12T10:00:00',
       end: '2022-01-12T11:00:00',
       color: '#F7E4F3'
     },
     {
       id: 5,
-      title: 'Bridal Opening day 2022',
+      title: 'James',
       start: '2022-01-12T12:00:00',
       end: '2022-01-12T12:30:00',
       color: '#D4E8D7'
     },
     {
       id: 6,
-      title: 'event 6',
+      title: 'Karen',
       start: '2022-01-12T12:30:00',
       end: '2022-01-12T13:00:00',
       color: '#F7E4F3'
     },
     {
       id: 7,
-      title: 'event 7',
+      title: 'Marry',
       start: '2022-01-12T10:00:00',
       end: '2022-01-12T11:00:00',
       color: '#F7E4F3'
     },
     {
       id: 8,
-      title: 'event 7',
+      title: 'James',
       start: '2022-01-12T11:00:00',
-      end: '2022-01-12T11:10:00',
-      color: '#D4E8D7'
-    },
-    {
-      id: 9,
-      title: 'event 8',
-      start: '2022-01-12T11:10:00',
       end: '2022-01-12T11:20:00',
       color: '#D4E8D7'
     },
+
     {
-      id: 10,
-      title: 'Bride Look',
+      id: 9,
+      title: 'Blackly',
       start: '2022-01-12T11:21:00',
-      end: '2022-01-12T11:29:00',
-      color: '#D4E8D7'
+      end: '2022-01-12T11:40:00',
+      color: '#F7E4F3'
     },
 
 
@@ -119,7 +113,7 @@ export default function FullCalendarApp() {
             // eventMaxStack: 3,
             dayMaxEventRows: 4,
             eventTimeFormat: {
-              hour: 'numeric',
+              hour: '2-digit',
               minute: '2-digit',
               meridiem: true,
 
@@ -130,6 +124,7 @@ export default function FullCalendarApp() {
           },
           week: {
             // titleFormat: "DD MMM",
+            eventMinHeight: 21,
             titleFormat: {
               month: 'short',
               day: 'numeric',
